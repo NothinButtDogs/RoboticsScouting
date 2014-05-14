@@ -1,0 +1,16 @@
+<resources>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="darkgrey">#8e8e8e</color>  
+    <color name="splashpage">#303030</color> 
+    <color name="white">#ffffff</color> 
+    <color name="yellow">#fff799</color>
+    <color name="black">#000000</color>
+    <color name="blue">#0072bc</color>
+    <color name="green">#89bb6d</color>
+    <color name="red">#ed1c24</color>
+    <color name="pink">#f06eaa</color>
+    <color name="purple">#605ca8</color>
+    <color name="orange">#eda04e</color>
+    <color name="litegreen">#a0bb91</color>
+</resources>

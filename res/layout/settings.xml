@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:weightSum="100"
+    android:layout_width="fill_parent"  android:background="@drawable/background" 
+    android:layout_height="fill_parent" >
+    <LinearLayout android:layout_weight="42"
+    android:orientation="horizontal" android:layout_gravity="center_horizontal"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent" android:gravity="center">
+    <TextView android:id="@+id/txtLogo" android:layout_height="wrap_content" 
+     android:layout_width="wrap_content" android:text="@string/settings"      
+     android:textSize="24sp"/>
+     </LinearLayout>
+<ScrollView android:id="@+id/ScrollView01" 
+    android:layout_width="fill_parent" android:layout_weight="17"
+    android:layout_height="fill_parent" >
+    <LinearLayout android:layout_height="wrap_content" 
+    android:gravity="center_horizontal"
+    android:layout_width="fill_parent" android:orientation="vertical" > 
+    
+   <RelativeLayout 
+			android:layout_width="fill_parent" android:id="@+id/rlay1"  
+			android:layout_height="wrap_content"  >
+	<TextView
+        android:id="@+id/txtTeamName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:padding="5dp" 
+        android:textColor="@color/white"
+        android:text="@string/teamname" />
+    <EditText
+        android:id="@+id/editTeamName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp" 
+        android:background="@color/white" 
+        android:inputType="text"
+        android:hint="@string/teamnamehint"
+        android:ems="10"
+        android:layout_toRightOf="@+id/txtTeamName" >
+        <requestFocus />
+    </EditText>
+    <TextView
+        android:id="@+id/txtTeamNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:padding="5dp" 
+        android:textColor="@color/white"
+        android:text="@string/teamnumber"
+        android:layout_below="@+id/txtTeamName" />
+    <EditText
+        android:id="@+id/editTeamNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp" 
+        android:background="@color/white" 
+        android:inputType="numberDecimal"
+        android:hint="@string/teamnumberhint"
+        android:ems="10"
+        android:layout_below="@+id/editTeamName"
+        android:layout_toRightOf="@+id/txtTeamNumber" >
+        <requestFocus />
+    </EditText>
+     
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/txtCompetition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:padding="5dp" 
+        android:textColor="@color/white"
+        android:text="@string/competition" />
+    
+    <ExpandableListView
+        android:id="@+id/listCompetition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp" 
+        android:textColor="@color/black"
+        android:background="@color/white" 
+         />
+    <TextView
+        android:id="@+id/txtMatch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:padding="5dp" 
+        android:textColor="@color/white"
+        android:text="@string/match" />
+    <EditText
+        android:id="@+id/editMatch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp" 
+        android:background="@color/white" 
+        android:inputType="numberDecimal"
+        android:hint="@string/matchhint"
+        android:ems="10" >
+        <requestFocus />
+    </EditText>
+    <TextView
+        android:id="@+id/txtRobot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:padding="5dp" 
+        android:textColor="@color/white"
+        android:text="@string/robot" />
+    <EditText
+        android:id="@+id/editRobot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp" 
+        android:background="@color/white" 
+        android:inputType="numberDecimal"
+        android:hint="@string/robothint"
+        android:ems="10" >
+        <requestFocus />
+    </EditText>
+    
+   </LinearLayout>
+   </ScrollView>
+   <LinearLayout android:layout_weight="41"
+	      android:layout_width="fill_parent"  android:gravity="bottom"
+	      android:layout_height="fill_parent"  
+	      android:layout_gravity="bottom" >
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        
+          android:gravity="center_horizontal">
+        <Button
+            android:id="@+id/btnSaveGameSetup"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_margin="4dp"
+            android:text="@string/savegamesetup" />
+
+<Button
+    android:id="@+id/btnCancelGameSetup"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:layout_marginTop="26dp"
+    android:padding="15dp"
+    android:text="@string/cancelgamesetup" />
+</LinearLayout>
+</LinearLayout>
+</LinearLayout>

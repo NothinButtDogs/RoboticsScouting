@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:weightSum="100"
+    android:layout_width="fill_parent"  android:background="@drawable/background" 
+    android:layout_height="fill_parent" >
+    <LinearLayout android:layout_weight="42"
+    android:orientation="horizontal" android:layout_gravity="center_horizontal"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent" android:gravity="center">
+    <TextView android:id="@+id/txtLogo" android:layout_height="wrap_content" 
+     android:layout_width="wrap_content" android:text="@string/autoscreen"      
+     android:textSize="24sp"/>
+     </LinearLayout>
+<ScrollView android:id="@+id/ScrollView01" 
+    android:layout_width="fill_parent" android:layout_weight="17"
+    android:layout_height="fill_parent" >
+    <LinearLayout android:layout_height="wrap_content" 
+    android:gravity="center_horizontal"
+    android:layout_width="fill_parent" android:orientation="vertical" > 
+    
+   <RelativeLayout 
+			android:layout_width="fill_parent" android:id="@+id/rlay1"  
+			android:layout_height="wrap_content" 
+			android:background="@color/black" >
+	<TextView
+        android:id="@+id/txtMoveForward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:padding="10dp" 
+        android:textColor="@color/white"
+        android:text="@string/moveforward" />
+    <EditText
+    	    android:id="@+id/ptsMoveForward"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_toRightOf="@+id/txtMoveForward"
+    	    android:inputType="number"
+    	    android:ems="2"   
+    	    android:padding="10dp"  	    
+    	    android:textSize="26sp"
+    	    android:text="0" >
+    	    <requestFocus />
+    	</EditText>
+        <ImageButton android:id="@+id/btnAdd"
+         	android:layout_width="wrap_content" android:layout_height="28dp" 
+	  	 	android:src="@drawable/add" android:layout_toRightOf="@+id/ptsMoveForward"
+	 	    android:padding="10dp" 
+	 	 	android:contentDescription="@string/addpoints"
+	 	 	android:background="@null">
+	 	 	</ImageButton>
+    	<ImageButton android:id="@+id/btnMinus"
+      		android:layout_width="wrap_content" android:layout_height="28dp" 
+	  		android:src="@drawable/minus" android:layout_below="@+id/btnAdd"
+	  		android:padding="10dp"	  		
+	  		android:contentDescription="@string/subpoints"
+	  		android:layout_toRightOf="@+id/ptsMoveForward"
+	  		android:background="@null"
+	  		android:visibility="visible">    	    
+    	</ImageButton>
+
+    	<TextView
+        android:id="@+id/txtShootBallShort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:padding="10dp" 
+        android:layout_below="@+id/txtMoveForward"
+        android:textColor="@color/white"
+        android:text="@string/shootball" />
+    <EditText
+    	    android:id="@+id/ptsShootBallShort"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_toRightOf="@+id/txtShootBallShort"
+    	    android:layout_below="@+id/ptsMoveForward"
+    	    android:layout_alignLeft="@+id/ptsMoveForward"
+    	    android:inputType="number"
+    	    android:ems="2"   
+    	    android:padding="10dp"  	    
+    	    android:textSize="26sp"
+    	    android:text="0" >
+    	    <requestFocus />
+    	</EditText>
+        <ImageButton android:id="@+id/btnAdd2"
+         	android:layout_width="wrap_content" android:layout_height="28dp" 
+	  	 	android:src="@drawable/add" android:layout_toRightOf="@+id/ptsShootBallShort"
+	 	    android:padding="10dp" 
+	 	 	android:contentDescription="@string/addpoints"
+	 	 	android:layout_below="@+id/btnMinus"
+	 	 	android:background="@null">
+	 	 	</ImageButton>
+    	<ImageButton android:id="@+id/btnMinus2"
+      		android:layout_width="wrap_content" android:layout_height="28dp" 
+	  		android:src="@drawable/minus" android:layout_below="@+id/btnAdd2"
+	  		android:padding="10dp"	  		
+	  		android:contentDescription="@string/subpoints"
+	  		android:layout_toRightOf="@+id/ptsShootBallShort"
+	  		android:background="@null"
+	  		android:visibility="visible">    	    
+    	</ImageButton>
+    	
+  <TextView
+        android:id="@+id/txtShootBallLong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:padding="10dp" 
+        android:layout_below="@+id/txtShootBallShort"
+        android:textColor="@color/white"
+        android:text="@string/shootball" />
+    <EditText
+    	    android:id="@+id/ptsShootBallLong"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_toRightOf="@+id/txtShootBallLong"
+    	    android:layout_below="@+id/ptsShootBallShort"
+    	    android:layout_alignLeft="@+id/ptsShootBallShort"
+    	    android:inputType="number"
+    	    android:ems="2"   
+    	    android:padding="10dp"  	    
+    	    android:textSize="26sp"
+    	    android:text="0" >
+    	    <requestFocus />
+    	</EditText>
+        <ImageButton android:id="@+id/btnAdd3"
+         	android:layout_width="wrap_content" android:layout_height="28dp" 
+	  	 	android:src="@drawable/add" android:layout_toRightOf="@+id/ptsShootBallLong"
+	 	    android:padding="10dp" 
+	 	 	android:contentDescription="@string/addpoints"
+	 	 	android:layout_below="@+id/btnMinus2"
+	 	 	android:background="@null">
+	 	 	</ImageButton>
+    	<ImageButton android:id="@+id/btnMinus3"
+      		android:layout_width="wrap_content" android:layout_height="28dp" 
+	  		android:src="@drawable/minus" android:layout_below="@+id/btnAdd3"
+	  		android:padding="10dp"	  		
+	  		android:contentDescription="@string/subpoints"
+	  		android:layout_toRightOf="@+id/ptsShootBallLong"
+	  		android:background="@null"
+	  		android:visibility="visible">    	    
+    	</ImageButton>
+    	<TextView
+        android:id="@+id/txtHotGoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:padding="10dp" 
+        android:layout_below="@+id/txtShootBallLong"
+        android:textColor="@color/white"
+        android:text="@string/hotgoal" />
+    <EditText
+    	    android:id="@+id/ptsHotGoal"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_toRightOf="@+id/txtHotGoal"
+    	    android:layout_below="@+id/ptsShootBallLong"
+    	    android:layout_alignLeft="@+id/ptsShootBallLong"
+    	    android:inputType="number"
+    	    android:ems="2"   
+    	    android:padding="10dp"  	    
+    	    android:textSize="26sp"
+    	    android:text="0" >
+    	    <requestFocus />
+    	</EditText>
+        <ImageButton android:id="@+id/btnAdd4"
+         	android:layout_width="wrap_content" android:layout_height="28dp" 
+	  	 	android:src="@drawable/add" android:layout_toRightOf="@+id/ptsHotGoal"
+	 	    android:padding="10dp" 
+	 	 	android:contentDescription="@string/addpoints"
+	 	 	android:layout_below="@+id/btnMinus3"
+	 	 	android:background="@null">
+	 	 	</ImageButton>
+    	<ImageButton android:id="@+id/btnMinus4"
+      		android:layout_width="wrap_content" android:layout_height="28dp" 
+	  		android:src="@drawable/minus" android:layout_below="@+id/btnAdd4"
+	  		android:padding="10dp"	  		
+	  		android:contentDescription="@string/subpoints"
+	  		android:layout_toRightOf="@+id/ptsHotGoal"
+	  		android:background="@null"
+	  		android:visibility="visible">    	    
+    	</ImageButton>
+    <EditText
+    	    android:id="@+id/editComments"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_below="@+id/btnMinus4"
+    	    android:inputType="text"
+    	    android:hint="@string/comments"
+    	    android:background="@color/white"
+        	android:textColor="@color/black"
+    	    android:ems="20"   
+    	    android:padding="20dp"  	    
+    	    android:textSize="18sp" >
+    	    <requestFocus />
+    	</EditText>
+     </RelativeLayout>
+    </LinearLayout>
+   </ScrollView>
+   <LinearLayout android:layout_weight="41"
+	      android:layout_width="fill_parent"  android:gravity="bottom"
+	      android:layout_height="fill_parent"  
+	      android:layout_gravity="bottom" >
+
+
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+        <Button
+            android:id="@+id/btnHome"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_margin="4dp"
+            android:text="@string/home" />
+
+<Button
+    android:id="@+id/btnNext"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:layout_marginTop="26dp"
+    android:padding="15dp"
+    android:text="@string/next" />
+</LinearLayout>
+</LinearLayout>
+</LinearLayout>
+        
